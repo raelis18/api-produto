@@ -6,7 +6,7 @@ name: CI-CD
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [master]
   
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -65,8 +65,8 @@ jobs:
         uses: Azure/k8s-deploy@v1.3
         with:
           manifests: 
-            ./k8s/mongodb/deployment.yaml
-            ./k8s/mongodb/service.yaml
+            k8s/mongodb/deployment.yaml
+            k8s/mongodb/service.yaml
             
       - name: Deploy API
         uses: Azure/k8s-deploy@v1.3

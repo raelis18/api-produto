@@ -13,7 +13,7 @@ spec:
     spec: 
       containers:
         - name: api
-          image: rael18/api-bootcamp-produto:v3
+          image: rael18/api-bootcamp-produto:v4
           ports: 
             - containerPort: 8080
           env:
